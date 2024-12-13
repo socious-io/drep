@@ -1,0 +1,105 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "Socious"
+    },
+    "motivations": {
+      "@value": "Drawing from our tech-for-impact experience, we are passionate about connecting blockchain technology with social good. We believe DReps are vital in shaping Cardano's governance future, and we're committed to keeping social impact at the forefront of decision-making."
+    },
+    "objectives": {
+      "@value": "Respecting the ethos of the Cardano Constitution, we aim to advocate for initiatives that improve economic, political, and social systems for everyone, everywhere. Our focus will be on supporting projects that create measurable positive change in society while ensuring responsible governance of the protocol. "
+    },
+    "paymentAddress": {
+      "@value": "addr1qy3g55p8c3svwh5637cua3qkszuq00rtey4rrcjm3pe6rvce9k8lqnzz7au2p73mue7ug90cuw7j7v99lcy5dhx6fptq7gx55a"
+    },
+    "qualifications": {
+      "@value": "Our diverse team includes Cardano developers, designers, entrepreneurs, legal professionals, and marketers, providing a well-balanced mix of expertise. We bring substantial experience in blockchain governance and community management. "
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "Twitter"
+        },
+        "uri": {
+          "@value": "https://x.com/SociousDAO"
+        }
+      },
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "Website"
+        },
+        "uri": {
+          "@value": "https://socious.io"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "Socious Drep"
+        },
+        "uri": {
+          "@value": "https://socious.io/drep"
+        }
+      }
+    ]
+  }
+}
